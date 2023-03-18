@@ -74,7 +74,7 @@ app.post("/api/send-email", async (req, res) => {
 
   const mailInfo = await transporter.sendMail({
     from: "fuelincompany@gmail.com",
-    to: "dilshanthilina53@gmail.com",
+    to: email,
     subject: "Fuel Request",
     text: "",
     html,
